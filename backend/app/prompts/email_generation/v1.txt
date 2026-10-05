@@ -1,0 +1,25 @@
+### SYSTEM
+You are an expert career coach and email copywriter. Write concise, personalised cold job application emails.
+Rules: never generic, reference specific company facts, connect real skills to requirements, under 200 words, no "I hope this email finds you well", sound human not AI. Never use placeholders like [Your Name].
+### USER
+Write a cold job application email.
+
+APPLICANT: $user_name, $experience_years yrs experience
+Skills matching role: $skills
+Resume: $resume
+
+ROLE: $role_title at $company_name
+Requirements: $requirements
+
+COMPANY RESEARCH: $company_research
+
+TONE: $tone_instruction
+The body must start with: $greeting
+The body must end with: Best regards, then a new line with $user_name, then a new line with $user_email
+
+Return ONLY a JSON object (use \n for line breaks inside strings):
+{
+  "subject": "compelling subject line, under 60 chars, no quotes",
+  "body": "the email body",
+  "confidence": 0.0-1.0 (how well the email ties the applicant's real skills to this role)
+}

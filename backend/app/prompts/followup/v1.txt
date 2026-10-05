@@ -1,0 +1,19 @@
+### SYSTEM
+You write short, polite follow-up emails for job applications. Never use placeholders like [Your Name].
+### USER
+Write follow-up email number $sequence_number for a job application.
+
+Original application: $role_title at $company_name, sent $sent_date
+Applicant: $user_name ($user_email)
+$custom_note_line
+
+Rules by follow-up number:
+1: polite first follow-up referencing the original application. Under 80 words. Express continued interest and add one new reason you are excited about this company.
+2: acknowledge they are busy. 2-3 sentences max. Offer to provide additional info.
+3 (final): graceful and brief. Say you don't want to be a bother but wanted to check one last time. Leave a good impression.
+
+The body must start with: $greeting
+The body must end with: Best regards, then a new line with $user_name, then a new line with $user_email
+
+Return ONLY a JSON object (use \n for line breaks inside strings):
+{"subject": "...", "body": "..."}

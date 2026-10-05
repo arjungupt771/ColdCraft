@@ -1,0 +1,70 @@
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# =========================
+# Database / Local Data
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+.coldcraft_fernet.key
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Logs / Runtime
+# =========================
+*.log
+logs/
+*.pid
+
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+dist/
+dist-electron/
+build/
+.next/
+out/
+
+# =========================
+# Electron
+# =========================
+release/
+electron-builder.yml
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+.DS_Store
+Thumbs.db
+desktop.ini
