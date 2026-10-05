@@ -1,4 +1,4 @@
-# ColdCraft v2.1 🎯
+# ColdCraft 
 
 AI cold-email generator for job hunting: paste a job URL or drop a screenshot → AI extracts the job, researches the company, finds a recruiter address, writes the email → you review and send via Gmail → follow-ups are scheduled and tracked.
 
